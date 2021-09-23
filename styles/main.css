@@ -22,8 +22,7 @@
     margin: 0;
     padding: 0;
     outline: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+    box-sizing: content-box;       
   }   
   body {
     font-family: 'Barlow', sans-serif;
@@ -31,7 +30,10 @@
     font-size: 18px;
     background-color: var(--bg-testimonials);    
   }
-  
+  .content{
+    width: 100%;
+    height: auto;    
+  }
     
 
   .home {
@@ -39,26 +41,23 @@
     background-size: cover;
   }
   .home header {
-    display: flex;
-    flex-flow: row wrap;
+    display: flex;    
     align-items: center;
     justify-content: space-between;
-    padding: 2rem;
+    padding: 2em 4em;
+  }  
+  .home header nav div a {    
+    margin: 0 2em;   
   }
-  .logo img {
-    vertical-align: middle;
-  }
-  .home menu a {
-    padding: 0.8rem 1.4rem;
-    color: var(--white);
-  }
-  .home menu a:last-child {
+  .home header nav div .contact {
     font-family: var(--title);
-    background: var(--white);
+    background: var(--white);    
+    display: flex;
+    align-items: center;   
     color: var(--very-dark-grayish-blue);
     border-radius: 50px;
     text-transform: uppercase;
-  }
+  }  
   .home-content {
     text-align: center;
     padding-top: 3rem;
@@ -72,16 +71,11 @@
     letter-spacing: 8px;
     margin-bottom: 4rem;
   }
- 
-  
- .fruits{
-    display: flex;    
-    justify-content: center; 
-  }
+
+
  .fruits .container_fruits {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items: center;   
   }
   .fruits .container_fruits article{
     padding: 0em 6em;  
@@ -95,7 +89,6 @@
     padding: 2em 0;
     color: var(--dark-grayish-blue);
     line-height: 1.5em; 
-    
   }
   .fruits .container_fruits article a{
     font-family: var(--title);
@@ -103,22 +96,23 @@
     color: var(--very-dark-desaturated-blue);      
   }
   .fruits .container_fruits img{
-    width: 632px;
+    width: 700px;
     height: auto;
-  }  
+  } 
+
+
   .fruits .container_graphic {
     display: flex;  
   }
   .fruits .container_graphic img {
-    width: 632px;
+    width: 38.92em;
     height: auto;    
   }
-  .fruits .container_graphic  article{
+  .fruits .container_graphic article{
     position:relative;
     z-index:1;
     bottom: 10em;
     text-align: center;
-    flex-wrap: wrap;
     justify-content: center;
     padding:  0 5em;  
   }  
@@ -139,6 +133,7 @@
     color:var(--dark-blue);
   }
   
+  
   .testimonials{
     display: flex;    
     justify-content: center; 
@@ -152,11 +147,13 @@
   }
   .client{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
    }  
   .client article { 
     text-align:center;
     margin: 0 1em;
+    padding-top: 3em;
     flex-basis: 18em;
   }
   .client article img{
@@ -181,14 +178,13 @@
     font-size: 19px;  
   }
   
-  /*Gallery*/
+  
   .gallery{
     display: flex;    
     justify-content: center;
   }
   .gallery .container_gallery {
     display: flex;
-    flex-direction: row;
     background-color: var(--bg-footer);
     justify-content: center;
   }
@@ -197,7 +193,7 @@
     height: auto;
   }
   
-/* footer*/  
+
   .footer{
     background-color:var(--bg-footer);
     padding: 4em 0em 4em 0em; 
@@ -218,6 +214,7 @@
   }
   .footer div article a {
     margin: 0 1em;
+    text-decoration: none;
   }
-  
+
   
